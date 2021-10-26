@@ -1,0 +1,37 @@
+list1 = [1,2,3,4,5]
+print("type: ", type(list1))
+print("List: ",list1)
+print("Length of list: ", len(list1))
+print("1st element in the list: ", list1[0])
+print("2nd and 3rd elements in the list: ", list1[1:3])
+print("last element in the list: ", list1[-1])
+print("Adding an element(6) to the list")
+list1.append(6)
+print("new list: ", list1)
+print("Adding  elements(7,8) to the list")
+list1.extend([7,8])
+print("new list: ", list1)
+print("Insert  0 in the first position of the list")
+list1.insert(0,0)
+print("new list: ", list1)
+print("Removing the last element(8) in the list")
+print("Element to be removed: ",list1.pop())
+print("new list: ", list1)
+print("Removing the first element(0) in the list")
+print("Element to be removed: ",list1.pop(0))
+print("new list: ", list1)
+print("retrieving indext of a list element")
+print("Index of 3: ", list1.index(3))
+print("----------------------------------------")
+print("List comprehension")
+print("list1: ", list1)
+print("Increse each element in list1 by 1 and store it in a new list(list2)")
+list2 = [e+1 for e in list1]
+print("list2: ", list2 )
+print("----------------------------------------")
+print("The first 9 squares")
+squares = [x*x for x in range(1,10,1)]
+print("The first 9 squares: ",squares)
+
+
+
